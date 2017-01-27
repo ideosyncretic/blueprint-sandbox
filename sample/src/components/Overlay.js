@@ -2,6 +2,13 @@ import React, {Component} from 'react'
 import * as Blueprint from "@blueprintjs/core";
 
 class Overlay extends Component {
+  constructor (props) {
+    super (props);
+
+    this.state = {
+      isOpen: false
+    }
+  }
   render () {
     return (
       <div>

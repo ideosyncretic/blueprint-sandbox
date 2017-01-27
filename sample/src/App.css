@@ -1,4 +1,7 @@
 .App {
   padding: 0;
-  margin: 0;
+}
+
+.App-body {
+  margin: 20px;
 }
