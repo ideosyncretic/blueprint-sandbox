@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/Nav'
-// import Overlay from './Overlay.js'
+import OverlayExample from './components/Overlay.js'
 import Breadcrumbs from './components/Breadcrumbs'
 import Login from './components/Login'
-import Popover from './components/Popover'
+import PopoverExample from './components/Popover'
+import TreeExample from './components/Tree'
 
 class App extends Component {
   render () {
@@ -16,7 +17,9 @@ class App extends Component {
         <div className='App-body'>
           <Breadcrumbs />
           <Login />
-          <Popover />
+          <PopoverExample />
+          <OverlayExample />
+          <TreeExample />
         </div>
       </div>
     );
