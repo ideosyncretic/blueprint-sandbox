@@ -14,11 +14,13 @@ class TreeExample extends Component {
     this.state = {
       nodes: [
         {
-            hasCaret: true,
+            key: 0,
+            hasCaret: false,
             iconName: "folder-close",
             label: "Folder 0",
         },
         {
+            key: 1,
             iconName: "folder-close",
             isExpanded: true,
             label: <Tooltip content="I'm a folder <3">Folder 1</Tooltip>,
@@ -53,10 +55,40 @@ class TreeExample extends Component {
        return true;
    }
 
+  handleNodeToggle = (nodeData: ITreeNode) => {
+    nodeData.isExpanded = !nodeData.isExpanded;
+    this.setState(this.state);
+  }
+
+  handleNodeCollapse = (nodeData: ITreeNode) => {
+    nodeData.isExpanded = false;
+    this.setState(this.state);
+   }
+
+  handleNodeExpand = (nodeData: ITreeNode) => {
+    nodeData.isExpanded = true;
+    this.setState(this.state);
+  }
+
+  forEachNode(nodes: ITreeNode[], callback: (node: ITreeNode) => void) {
+    if (nodes == null) {
+        return;
+     }
+
+    for (const node of nodes) {
+        callback(node);
+        this.forEachNode(node.childNodes, callback);
+    }
+  }
+
   render () {
     return (
       <div>
-        <Tree contents={this.state.nodes}>
+        <Tree contents={this.state.nodes}
+          onNodeClick={this.handleNodeToggle}
+          onNodeCollapse={this.handleNodeCollapse}
+          onNodeExpand={this.handleNodeExpand}
+          className={Classes.ELEVATION_0}>
         </Tree>
       </div>
     )
