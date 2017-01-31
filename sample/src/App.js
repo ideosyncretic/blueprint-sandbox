@@ -6,7 +6,8 @@ import Breadcrumbs from './components/Breadcrumbs'
 import Login from './components/Login'
 import PopoverExample from './components/Popover'
 import TreeExample from './components/Tree'
-import TableExample from './components/Table'
+// import TableExample from './components/Table'
+import MenuExample from './components/Menu'
 
 class App extends Component {
   render () {
@@ -16,12 +17,12 @@ class App extends Component {
           <Nav />
         </div>
         <div className='App-body'>
-          <div className='sample'><Breadcrumbs /></div>
-          <div className='sample'><Login /></div>
-          <div className='sample'><PopoverExample /></div>
-          <div className='sample'><OverlayExample /></div>
-          <div className='sample'><TreeExample /></div>
-          <div className='sample'><TableExample /></div>
+          <div className='sample-component'><Breadcrumbs /></div>
+          <div className='sample-component'><Login /></div>
+          <div className='sample-component'><PopoverExample /></div>
+          <div className='sample-component'><OverlayExample /></div>
+          <div className='sample-component'><TreeExample /></div>
+          <div className='sample-component'><MenuExample /></div>
         </div>
       </div>
     );

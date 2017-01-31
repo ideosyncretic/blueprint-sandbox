@@ -33,10 +33,8 @@ class TableExample extends Component {
 
   render () {
     return (
-      <div>
-
+      <div className="table">
         <Blueprint.Button iconName="add" text="Add Row" intent={Blueprint.Intent.PRIMARY} onClick={this.addRow.bind(this)} />
-        <Blueprint.Button iconName="remove" text="Remove Last Row" intent={Blueprint.Intent.DANGER} onClick={this.removeLastRow.bind(this)} />
         <Blueprint.Button iconName="remove" text="Clear Rows" intent={Blueprint.Intent.DANGER} onClick={this.clearRows.bind(this)} />
 
         <Table numRows={this.state.tableRows} fillBodyWithGhostCells={true}>
@@ -44,7 +42,6 @@ class TableExample extends Component {
             <Column />
             <Column />
         </Table>
-
       </div>
     )
   }
