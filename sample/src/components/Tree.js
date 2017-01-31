@@ -18,10 +18,10 @@ class TreeExample extends Component {
             key: 0,
             iconName: "pt-icon-projects",
             isExpanded: true,
-            label: <Tooltip content="I'm a folder <3">Invoices</Tooltip>,
+            label: <Tooltip content="I'm a folder <3">Some category</Tooltip>,
 
             childNodes: [
-                { iconName: "pt-icon-mugshot", label: "Debtors", secondaryLabel: tooltipLabel },
+                { iconName: "pt-icon-mugshot", label: "People", secondaryLabel: tooltipLabel },
                 { iconName: "pt-icon-tag", label: longLabel },
                 {
                     hasCaret: true,
@@ -46,14 +46,14 @@ class TreeExample extends Component {
             key: 1,
             hasCaret: false,
             iconName: "dollar",
-            label: "Instant Financing",
+            label: "Instant Moolah",
         },
 
         {
             key: 2,
             hasCaret: false,
-            iconName: "cog",
-            label: "Settings",
+            iconName: "pt-icon-manual",
+            label: "Credit Search",
         }
       ]
     }
