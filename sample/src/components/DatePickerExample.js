@@ -1,13 +1,12 @@
 import React, {Component} from 'react'
-import * as Blueprint from '@blueprintjs/core'
+import * as DateTime from '@blueprintjs/datetime'
 
-const { DatePicker } = Blueprint
+const { DatePicker } = DateTime
 
 class DatePickerExample extends Component {
   render () {
     return (
-      <DatePicker>
-      </DatePicker>
+      <DatePicker/>
     )
   }
 }
