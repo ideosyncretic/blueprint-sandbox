@@ -1,0 +1,10 @@
+.sidenav {
+  align-self: left;
+  width: 300px;
+  left: 0;
+  height: 100vh;
+}
+
+.sidenav.pt-menu {
+  background-color: #F5F8FA;
+}

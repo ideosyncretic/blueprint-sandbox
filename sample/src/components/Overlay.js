@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import * as Blueprint from "@blueprintjs/core";
 import './Overlay.css'
 
-const { Button, Overlay, Alert } = Blueprint
+const { Button, Overlay } = Blueprint
 
 class OverlayExample extends Component {
   constructor (props) {
