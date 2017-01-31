@@ -3,6 +3,12 @@
 }
 
 .App-body {
+  display: flex;
+  float: left;
+}
+
+.contents  {
+  float: left;
   margin: 20px;
 }
 

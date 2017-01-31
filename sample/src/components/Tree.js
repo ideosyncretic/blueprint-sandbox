@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import * as Blueprint from '@blueprintjs/core'
+import './Tree.css'
 
-const { Classes, ITreeNode, Tooltip, Tree } = Blueprint
+const { ITreeNode, Tooltip, Tree } = Blueprint
 
 class TreeExample extends Component {
 
@@ -9,24 +10,18 @@ class TreeExample extends Component {
     super ()
 
     const tooltipLabel = <Tooltip content="An eye!"><span className="pt-icon-standard pt-icon-eye-open"/></Tooltip>;
-    const longLabel = "Organic meditation gluten-free, sriracha VHS drinking vinegar beard man.";
+    const longLabel = "Long label";
 
     this.state = {
       nodes: [
         {
             key: 0,
-            hasCaret: false,
-            iconName: "folder-close",
-            label: "Folder 0",
-        },
-        {
-            key: 1,
-            iconName: "folder-close",
+            iconName: "pt-icon-projects",
             isExpanded: true,
-            label: <Tooltip content="I'm a folder <3">Folder 1</Tooltip>,
+            label: <Tooltip content="I'm a folder <3">Invoices</Tooltip>,
 
             childNodes: [
-                { iconName: "document", label: "Item 0", secondaryLabel: tooltipLabel },
+                { iconName: "pt-icon-mugshot", label: "Debtors", secondaryLabel: tooltipLabel },
                 { iconName: "pt-icon-tag", label: longLabel },
                 {
                     hasCaret: true,
@@ -45,6 +40,20 @@ class TreeExample extends Component {
                     ],
                 },
             ]
+        },
+
+        {
+            key: 1,
+            hasCaret: false,
+            iconName: "dollar",
+            label: "Instant Financing",
+        },
+
+        {
+            key: 2,
+            hasCaret: false,
+            iconName: "cog",
+            label: "Settings",
         }
       ]
     }
@@ -88,7 +97,7 @@ class TreeExample extends Component {
           onNodeClick={this.handleNodeToggle}
           onNodeCollapse={this.handleNodeCollapse}
           onNodeExpand={this.handleNodeExpand}
-          className={Classes.ELEVATION_0}>
+          className='tree pt-elevation-0'>
         </Tree>
       </div>
     )

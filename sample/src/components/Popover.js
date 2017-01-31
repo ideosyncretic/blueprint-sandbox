@@ -22,7 +22,7 @@ const { Button, Popover, PopoverInteractionKind, Position } = Blueprint;
                      popoverClassName="pt-popover-content-sizing"
                      position={Position.RIGHT}
                      useSmartPositioning={false}>
-                <Button className="pt-button pt-intent-primary">Button with Tooltip</Button>
+                <Button className="pt-button pt-intent-primary">Hover for Tooltip</Button>
             </Popover>
         );
     }
