@@ -7,7 +7,7 @@ const { Menu, MenuItem, MenuDivider } = Blueprint;
 class Sidenav extends Component {
      render() {
         return (
-            <Menu className='pt-menu pt-elevation-1 pt-large sidenav' style={{backgroundColor: '#F5F8FA'}}>
+            <Menu className='pt-menu pt-large sidenav' style={{backgroundColor: '#F5F8FA'}}>
                 <MenuItem
                     iconName='pt-icon-dashboard'
                     onClick={this.handleClick}

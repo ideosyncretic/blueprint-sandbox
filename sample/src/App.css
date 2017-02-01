@@ -1,5 +1,7 @@
 .App {
   padding: 0;
+  display: flex;
+  flex-flow: column;
 }
 
 .App-body {
@@ -7,11 +9,15 @@
   float: left;
 }
 
-.contents  {
-  float: left;
-  margin: 20px;
-  background-color: #F5F8FA;
-}
+  .sidenav {
+    height: 100vh;
+    background-color: #F5F8FA;
+  }
+
+  .contents  {
+    margin: 20px;
+    background-color: #F5F8FA;
+  }
 
 .sample-component {
   margin: 15px;

@@ -16,7 +16,7 @@ class RemovableTag extends Component {
 
   renderTag() {
     if (this.state.showTag) {
-      return <Tag className={Classes.MINIMAL} intent={Intent.PRIMARY} onRemove={this.deleteTag}>Done</Tag>;
+      return <Tag className={Classes.MINIMAL} intent={Intent.PRIMARY} onRemove={this.deleteTag}>Minimal and removable</Tag>;
         } else {
             return undefined;
         }

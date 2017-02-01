@@ -20,23 +20,30 @@ class App extends Component {
   render () {
     return (
       <div className="App">
+
         <div className="App-header">
-          <Nav />
+          <Nav className='nav' />
         </div>
+
         <div className='App-body'>
-          <div className='sidebar'><Sidenav /></div>
+
+          <div className='sidenav'><Sidenav /></div>
+
+          <div className='contents'>
+            <div className='sample-component'><Breadcrumbs /></div>
+            <div className='sample-component'><Login /></div>
+            <div className='sample-component'><PopoverExample /></div>
+            <div className='sample-component'><OverlayExample /></div>
+            <div className='sample-component'><MenuExample /></div>
+            <div className='sample-component'><PopoverMenu /></div>
+            <div className='sample-component'><TreeExample /></div>
+            <div className='sample-component'><TagExample /></div>
+            <div className='sample-component'><RemovableTag /></div>
+            <div className='sample-component'><Login /></div>
+          </div>
+
         </div>
-        <div className='contents'>
-          <div className='sample-component'><Breadcrumbs /></div>
-          <div className='sample-component'><Login /></div>
-          <div className='sample-component'><PopoverExample /></div>
-          <div className='sample-component'><OverlayExample /></div>
-          <div className='sample-component'><MenuExample /></div>
-          <div className='sample-component'><PopoverMenu /></div>
-          <div className='sample-component'><TreeExample /></div>
-          <div className='sample-component'><TagExample /></div>
-          <div className='sample-component'><RemovableTag /></div>
-        </div>
+
       </div>
     );
   }

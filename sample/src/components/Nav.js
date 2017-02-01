@@ -6,7 +6,7 @@ const { Button, Popover, Position, PopoverInteractionKind } = Blueprint
 class Nav extends Component {
   render () {
     return (
-      <nav className="pt-navbar .pt-fixed-top" style={{backgroundColor: '#F5F8FA'}}>
+      <nav className="pt-navbar" style={{backgroundColor: '#F5F8FA'}}>
         <div className="pt-navbar-group pt-align-left">
           <div className="pt-navbar-heading logo"><img src='https://cdn.frontify.com/api/screen/thumbnail/_QrmSF3nImkgDDNl6RTGS-dzV43I1RYnsIg0PyJuikJFKbIqrSq1BfNPt0QqNiLI6dDJXJ2oKJdRXAsyujCkNw/471' style={{width: '110px'}} alt='finaxar-logo'/></div>
         </div>
@@ -17,7 +17,7 @@ class Nav extends Component {
           </div>
           <Button className="pt-button pt-minimal pt-icon-document">Invoices</Button>
           <span className="pt-navbar-divider"></span>
-          
+
           <Popover content={<Menu>...</Menu>} position={Position.BOTTOM_RIGHT} interactionKind={PopoverInteractionKind.HOVER}>
           <Button className="pt-button pt-minimal pt-icon-user"></Button></Popover>
           <Button className="pt-button pt-minimal pt-icon-notifications"></Button>

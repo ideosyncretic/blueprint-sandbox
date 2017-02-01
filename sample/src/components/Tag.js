@@ -8,10 +8,10 @@ const { Tag, Intent } = Blueprint
    render () {
      return (
       <div>
-         <Tag className='tag pt-large' intent={Intent.DEFAULT} onRemove={this.deleteTag}>Default</Tag>
-         <Tag className='tag pt-large pt-round' intent={Intent.DANGER} onRemove={this.deleteTag}>Round</Tag>
+         <Tag className='tag pt-large' intent={Intent.DEFAULT} onRemove={this.deleteTag}>Large</Tag>
+         <Tag className='tag pt-large pt-round' intent={Intent.DANGER} onRemove={this.deleteTag}>Round Pill</Tag>
          <Tag className='tag' intent={Intent.SUCCESS} onRemove={this.deleteTag}>Success</Tag>
-         <Tag className='tag' intent={Intent.PRIMARY} onRemove={this.deleteTag}>Done</Tag>
+         <Tag className='tag' intent={Intent.PRIMARY} onRemove={this.deleteTag}>Primary</Tag>
       </div>
      )
    }

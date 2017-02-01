@@ -1,8 +1,7 @@
 .sidenav {
   align-self: left;
-  width: 300px;
+  width: 200px;
   left: 0;
-  height: 100vh;
 }
 
 .sidenav.pt-menu {
