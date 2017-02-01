@@ -2,6 +2,7 @@
   padding: 0;
   display: flex;
   flex-flow: column;
+  max-height: 100vh;
 }
 
 .App-body {
@@ -10,13 +11,15 @@
 }
 
   .sidenav {
-    height: 100vh;
+    height: calc(100vh - 50px);
     background-color: #F5F8FA;
   }
 
   .contents  {
-    margin: 20px;
     background-color: #F5F8FA;
+    overflow: auto;
+    max-height: calc(100vh - 50px);
+    min-width: calc(100vw - 220px)
   }
 
 .sample-component {
