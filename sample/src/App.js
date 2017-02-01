@@ -13,6 +13,8 @@ import MenuExample from './components/Menu'
 import PopoverMenu from './components/PopoverMenu'
 // import DatePickerExample from './components/DatePickerExample'
 import ToasterExample from './components/Toaster'
+import TagExample from './components/Tag'
+import RemovableTag from './components/TagRemovable'
 
 class App extends Component {
   render () {
@@ -32,6 +34,8 @@ class App extends Component {
           <div className='sample-component'><MenuExample /></div>
           <div className='sample-component'><PopoverMenu /></div>
           <div className='sample-component'><TreeExample /></div>
+          <div className='sample-component'><TagExample /></div>
+          <div className='sample-component'><RemovableTag /></div>
         </div>
       </div>
     );

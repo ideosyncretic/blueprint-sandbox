@@ -1,6 +1,6 @@
 // toaster.ts
 import React, { Component } from 'react'
-import { Position, Toaster } from "@blueprintjs/core";
+import { Toaster } from "@blueprintjs/core";
 
  class ToasterExample extends Component {
    render () {
