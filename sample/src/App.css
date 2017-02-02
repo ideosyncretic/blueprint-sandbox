@@ -15,7 +15,7 @@
     background-color: #F5F8FA;
   }
 
-  .contents  {
+  .page  {
     background-color: #F5F8FA;
     overflow: auto;
     max-height: calc(100vh - 50px);

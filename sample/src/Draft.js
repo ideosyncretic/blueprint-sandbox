@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import * as Blueprint from '@blueprintjs/core'
 
 import Nav from './components/Nav'
@@ -18,7 +17,7 @@ import ToasterExample from './components/Toaster'
 import TagExample from './components/Tag'
 import RemovableTag from './components/TagRemovable'
 
-class App extends Component {
+class Draft extends Component {
   render () {
     return (
       <div className="App">
@@ -32,7 +31,17 @@ class App extends Component {
           <div className='sidenav'><Sidenav /></div>
 
           <div className='contents'>
-            // yield for contents here
+            <div className='sample-component'><Breadcrumbs /></div>
+            <div className='sample-component'><Login /></div>
+            <div className='sample-component'><PopoverExample /></div>
+            <div className='sample-component'><OverlayExample /></div>
+            <div className='sample-component'><MenuExample /></div>
+            <div className='sample-component'><PopoverMenu /></div>
+            <div className='sample-component'><TreeExample /></div>
+            <div className='sample-component'><TagExample /></div>
+            <div className='sample-component'><RemovableTag /></div>
+            <div className='sample-component'><Login /></div>
+            <div className='sample-component'><TableCSS /></div>
           </div>
 
         </div>
@@ -43,4 +52,4 @@ class App extends Component {
 }
 
 
-export default App;
+export default Draft;
