@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Link } from 'react-router'
 import * as Blueprint from '@blueprintjs/core'
 import Menu from './Menu.js'
 const { Button, Popover, Position, PopoverInteractionKind } = Blueprint
@@ -8,7 +9,8 @@ class Nav extends Component {
     return (
       <nav className="pt-navbar" style={{backgroundColor: '#F5F8FA'}}>
         <div className="pt-navbar-group pt-align-left">
-          <div className="pt-navbar-heading logo"><img src='https://cdn.frontify.com/api/screen/thumbnail/_QrmSF3nImkgDDNl6RTGS-dzV43I1RYnsIg0PyJuikJFKbIqrSq1BfNPt0QqNiLI6dDJXJ2oKJdRXAsyujCkNw/471' style={{width: '110px'}} alt='finaxar-logo'/></div>
+          <Link to="/draft">
+            <div className="pt-navbar-heading logo"><img src='https://cdn.frontify.com/api/screen/thumbnail/_QrmSF3nImkgDDNl6RTGS-dzV43I1RYnsIg0PyJuikJFKbIqrSq1BfNPt0QqNiLI6dDJXJ2oKJdRXAsyujCkNw/471' style={{width: '110px'}} alt='finaxar-logo'/></div></Link>
         </div>
         <div className="pt-navbar-group pt-align-right">
           <div className='pt-input-group'>

@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Link } from 'react-router'
 import * as Blueprint from '@blueprintjs/core'
 import './Sidenav.css'
 
@@ -7,23 +8,23 @@ const { Menu, MenuItem, MenuDivider } = Blueprint;
 class Sidenav extends Component {
      render() {
         return (
-            <Menu className='pt-menu pt-large sidenav' style={{backgroundColor: '#F5F8FA'}}>
+            <Menu className='pt-menu pt-large sidenav'>
+
                 <MenuItem
-                    iconName='pt-icon-dashboard'
-                    onClick={this.handleClick}
-                    text='Dashboard' />
-                  <MenuDivider />
+                  iconName='pt-icon-dashboard'
+                  text='Dashboard'
+                  href="/#/dashboard" />
+                <MenuDivider />
+
                 <MenuItem
                     iconName='pt-icon-document'
-                    onClick={this.handleClick}
-                    text='Invoices' />
+                    text='Invoices'
+                    href="/#/draft" />
                 <MenuItem
                     iconName='pt-icon-draw'
-                    onClick={this.handleClick}
                     text='Debtors' />
                 <MenuItem
                   iconName='pt-icon-timeline-bar-chart'
-                  onClick={this.handleClick}
                   text='Reports' />
                 <MenuDivider />
                 <MenuItem iconName='dollar' text='Instant Financing'/>

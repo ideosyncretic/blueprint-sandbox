@@ -15,6 +15,7 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <IndexRoute component={Draft}/>
       <Route path="dashboard" component={Dashboard} />
+      <Route path="draft" component={Draft} />
     </Route>
   </Router>,
   document.getElementById('root')
