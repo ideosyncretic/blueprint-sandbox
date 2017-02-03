@@ -31,8 +31,8 @@ class App extends Component {
 
           <div className='sidenav'><Sidenav /></div>
 
-          <div className='contents'>
-            // yield for contents here
+          <div className='page'>
+            {this.props.children}
           </div>
 
         </div>
